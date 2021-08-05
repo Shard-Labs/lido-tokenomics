@@ -5,7 +5,7 @@ const fs = require('fs');
 async function main() {
 
 
-    const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/v3/4ef3b365c6b141ee81e8d8ae0c6a4bed'));
+    const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/v3/xxx'));
     const contract = new web3.eth.Contract(abi, '0x86E4Dc95c7FBdBf52e33D563BbDB00823894C287');
     const latestBlock = await web3.eth.getBlockNumber();
     const startBlock = 10167725;
